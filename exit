@@ -1,0 +1,71 @@
+[33mcommit e6aa735e8d18399141b295af4380816334c71244[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Wed Sep 4 20:04:55 2019 +0700
+
+    Add palette footer
+
+[33mcommit 32b5b93a870c85645623003e3d350845667f170e[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Wed Sep 4 19:53:27 2019 +0700
+
+    Add snackbar
+
+[33mcommit 52a9380e738ab26ac5e2c90a07768538a0deeff2[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Wed Sep 4 18:58:29 2019 +0700
+
+    Add select and Material UI
+
+[33mcommit 87dfc24855b0ea55a0c74849c0907989e51a23c6[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Wed Sep 4 14:52:11 2019 +0700
+
+    Add navbar
+
+[33mcommit 936a390e4805b428440d5af0aa5fefe8aec66689[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Wed Sep 4 14:20:05 2019 +0700
+
+    Style the color slider
+
+[33mcommit 5d9e6f6bd05e9865b445066f55b4c0d87a988bb0[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Wed Sep 4 14:08:02 2019 +0700
+
+    Adding color slider
+
+[33mcommit 0fd7e2c7d19cd8d92462be64776e38eea5596d1c[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Wed Sep 4 11:14:48 2019 +0700
+
+    Generate shades of colors
+
+[33mcommit a1398a68b6dfbeddbc7c60dd907674475464d65f[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Wed Sep 4 10:14:13 2019 +0700
+
+    Add overlay animation
+
+[33mcommit 844d956a4407b661f71a693cc7a8a376b70f083e[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Wed Sep 4 09:46:11 2019 +0700
+
+    Add Copy to CLipboard
+
+[33mcommit 89fc24f081abfb4732444a49a10fb620d1ed8200[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Wed Sep 4 09:35:55 2019 +0700
+
+    Styling ColorBox
+
+[33mcommit 4f966b7806a893010afe9592fa35a24b908c7896[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Tue Sep 3 14:17:18 2019 +0700
+
+    add color box
+
+[33mcommit ac1d9b63c67eb5b941f35f60945499b4e184e504[m
+Author: wkwkwkwk <aula.mh46@gmail.com>
+Date:   Tue Sep 3 11:28:41 2019 +0700
+
+    create react app
