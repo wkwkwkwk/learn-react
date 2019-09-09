@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
 // import PaletteFormNav from "./PaletteFormNav";
-// import ColorPickerForm from "./ColorPickerForm";
+import ColorPickerForm from "./ColorPickerForm";
 import Drawer from "@material-ui/core/Drawer";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
@@ -142,7 +142,7 @@ class NewPaletteForm extends Component {
             colors: this.state.colors.filter(color => color.name !== colorName)
         });
     }
-    
+
     // onSortEnd = ({ oldIndex, newIndex }) => {
     //     this.setState(({ colors }) => ({
     //         colors: arrayMove(colors, oldIndex, newIndex)
@@ -177,7 +177,7 @@ class NewPaletteForm extends Component {
                         </IconButton>
                     </div>
                     <Divider />
-                    {/* <div className={classes.container}>
+                    <div className={classes.container}>
                         <Typography variant='h4' gutterBottom>
                             Design Your Palette
                         </Typography>
@@ -205,7 +205,7 @@ class NewPaletteForm extends Component {
                             addNewColor={this.addNewColor}
                             colors={colors}
                         />
-                    </div> */}
+                    </div>
                 </Drawer>
                 <main
                     className={classNames(classes.content, {
