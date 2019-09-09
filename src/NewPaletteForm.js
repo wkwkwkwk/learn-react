@@ -13,6 +13,7 @@ import Button from "@material-ui/core/Button";
 // import { arrayMove } from "react-sortable-hoc";
 import styles from "./styles/NewPaletteFormStyles";
 import seedColors from "./seedColors";
+import DraggableColorBox from './DraggableColorBox';
 
 class NewPaletteForm extends Component {
     static defaultProps = {
@@ -156,6 +157,7 @@ class NewPaletteForm extends Component {
                     })}
                 >
                     <div className={classes.drawerHeader} />
+                    <DraggableColorBox />
                     {/* <DraggableColorList
                         colors={colors}
                         removeColor={this.removeColor}
