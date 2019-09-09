@@ -9,11 +9,10 @@ import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
-// import DraggableColorList from "./DraggableColorList";
-// import { arrayMove } from "react-sortable-hoc";
+import DraggableColorList from "./DraggableColorList";
+import { arrayMove } from "react-sortable-hoc";
 import styles from "./styles/NewPaletteFormStyles";
 import seedColors from "./seedColors";
-import DraggableColorBox from './DraggableColorBox';
 
 class NewPaletteForm extends Component {
     static defaultProps = {
@@ -87,11 +86,11 @@ class NewPaletteForm extends Component {
         });
     }
 
-    // onSortEnd = ({ oldIndex, newIndex }) => {
-    //     this.setState(({ colors }) => ({
-    //         colors: arrayMove(colors, oldIndex, newIndex)
-    //     }));
-    // };
+    onSortEnd = ({ oldIndex, newIndex }) => {
+        this.setState(({ colors }) => ({
+            colors: arrayMove(colors, oldIndex, newIndex)
+        }));
+    };
 
     render() {
         const { classes, maxColors, palettes } = this.props;
@@ -157,16 +156,13 @@ class NewPaletteForm extends Component {
                     })}
                 >
                     <div className={classes.drawerHeader} />
-                    {this.state.colors.map(color => (
-                        <DraggableColorBox key={color.name} color={color.color} name={color.name} handleClick={() => this.removeColor(color.name)} />
-                    ))}
-                    {/* <DraggableColorList
+                    <DraggableColorList
                         colors={colors}
                         removeColor={this.removeColor}
                         axis='xy'
                         onSortEnd={this.onSortEnd}
                         distance={20}
-                    /> */}
+                    />
                 </main>
             </div>
         )
