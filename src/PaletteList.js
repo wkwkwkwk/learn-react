@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import MiniPalette from './MiniPalette';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Dialog from "@material-ui/core/Dialog";
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -11,10 +11,10 @@ import CheckIcon from '@material-ui/icons/Check';
 import CloseIcon from '@material-ui/icons/Close';
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { withStyles } from '@material-ui/styles';
-import styles from './styles/PaletteListStyles';
 import blue from '@material-ui/core/colors/blue';
 import red from '@material-ui/core/colors/red';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import MiniPalette from './MiniPalette';
+import styles from './styles/PaletteListStyles';
 
 class PaletteList extends Component {
     constructor(props) {
@@ -67,8 +67,7 @@ class PaletteList extends Component {
                             >
                                 <MiniPalette 
                                     {...palette} 
-                                    goToPalette={this.goToPalette} 
-                                    // handleDelete={deletePalette} 
+                                    goToPalette={this.goToPalette}  
                                     openDialog={this.openDialog} 
                                     key={palette.id} 
                                     id={palette.id} 
