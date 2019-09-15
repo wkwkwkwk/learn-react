@@ -47,7 +47,7 @@ class App extends Component {
           <TransitionGroup>
             <CSSTransition key={location.key} classNames="page" timeout={500} unmountOnExit>
               <Switch location={location}>
-                <Route
+                <Route 
                   exact
                   path="/palette/new"
                   render={(routeProps) => (
@@ -56,7 +56,7 @@ class App extends Component {
                     </Page>
                   )}
                 />
-                <Route
+                <Route 
                   exact
                   path="/"
                   render={(routeProps) => (
@@ -65,7 +65,7 @@ class App extends Component {
                     </Page>
                   )}
                 />
-                <Route
+                <Route 
                   exact
                   path="/palette/:id"
                   render={(routeProps) => (
@@ -74,12 +74,19 @@ class App extends Component {
                     </Page>
                   )}
                 />
-                <Route
+                <Route 
                   exact
                   path="/palette/:paletteId/:colorId"
                   render={(routeProps) => (
                     <Page>
                       <SingleColorPalette colorId={routeProps.match.params.colorId} palette={generatePalette(this.findPalette(routeProps.match.params.paletteId))} />
+                    </Page>
+                  )}
+                />
+                <Route 
+                  render={(routeProps) => (
+                    <Page>
+                      <PaletteList palettes={this.state.palettes} deletePalette={this.deletePalette} {...routeProps} />
                     </Page>
                   )}
                 />
